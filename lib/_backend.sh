@@ -19,7 +19,7 @@ backend_db_create() {
   mkdir -p /data
   chown -R 999:999 /data
   docker run --name postgresql \
-                -e POSTGRES_USER=whazing \
+                -e POSTGRES_USER=ygor \
                 -e POSTGRES_PASSWORD=${pg_pass} \
 				-e TZ="America/Sao_Paulo" \
                 -p 5432:5432 \
@@ -85,7 +85,7 @@ DB_DIALECT=postgres
 DB_PORT=5432
 DB_TIMEZONE=-03:00
 POSTGRES_HOST=localhost
-POSTGRES_USER=whazing
+POSTGRES_USER=ygor
 POSTGRES_PASSWORD=${pg_pass}
 POSTGRES_DB=postgres
 
